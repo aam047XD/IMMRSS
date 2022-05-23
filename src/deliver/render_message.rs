@@ -65,7 +65,7 @@ impl MessageRenderer {
         );
         self.maybe_set_value(
             &mut data,
-            BOT_ITEM_NAME,
+            <code>BOT_ITEM_NAME</code>,
             &self.maybe_remove_html(&self.bot_item_name),
         );
         self.maybe_set_value(&mut data, BOT_DATE, &self.date());
