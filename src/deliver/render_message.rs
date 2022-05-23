@@ -21,7 +21,7 @@ const BOT_ITEM_LINK: &str = "bot_item_link";
 const BOT_ITEM_DESCRIPTION: &str = "bot_item_description";
 
 const SUBSTRING_HELPER: &str = "substring";
-const DEFAULT_TEMPLATE: &str = "{{bot_feed_name}}\n\n\{{bot_item_name}}\n\n{{bot_item_link}}\n\n{{bot_date}}\n\n";
+const DEFAULT_TEMPLATE: &str = "{{bot_feed_name}}\n\n{{bot_item_name}}\n\n{{bot_item_link}}\n\n{{bot_date}}\n\n";
 const MAX_CHARS: usize = 4000;
 
 const RENDER_ERROR: &str = "Failed to render template";
