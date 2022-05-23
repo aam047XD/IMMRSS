@@ -21,7 +21,7 @@ const BOT_ITEM_LINK: &str = "bot_item_link";
 const BOT_ITEM_DESCRIPTION: &str = "bot_item_description";
 
 const SUBSTRING_HELPER: &str = "substring";
-const DEFAULT_TEMPLATE: &str = "{{bot_feed_name}}\n\n{{bot_item_name}}\n\n{{bot_item_link}}\n\n{{bot_date}}\n\n";
+const DEFAULT_TEMPLATE: &str = "{{bot_feed_name}}\n\n{{<code>bot_item_name</code>}}\n\n{{bot_item_link}}\n\n{{bot_date}}\n\n";
 const MAX_CHARS: usize = 4000;
 
 const RENDER_ERROR: &str = "Failed to render template";
@@ -65,7 +65,7 @@ impl MessageRenderer {
         );
         self.maybe_set_value(
             &mut data,
-            <code>BOT_ITEM_NAME</code>,
+            BOT_ITEM_NAME,
             &self.maybe_remove_html(&self.bot_item_name),
         );
         self.maybe_set_value(&mut data, BOT_DATE, &self.date());
